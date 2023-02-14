@@ -1,0 +1,32 @@
+.shop-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop-product-image {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.shop-product-image img {
+  border-radius: 5px;
+}
+
+.product-name {
+  font-family: "Avenir";
+  margin-top: 10px;
+}
+
+.product-price {
+  margin-top: 5px;
+  font-family: "Avenir";
+  color: #000;
+}
+
+.product-name {
+  color: #964078;
+  font-weight: 600;
+  font-size: 1.2rem;
+}

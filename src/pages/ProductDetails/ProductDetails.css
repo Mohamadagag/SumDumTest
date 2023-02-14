@@ -1,0 +1,90 @@
+.product-details {
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+
+.image-description {
+  object-fit: cover;
+}
+
+.image-description h2 {
+  font-family: "Avenir";
+  margin-top: 40px;
+  color: #536974;
+}
+
+.description-price p:first-child {
+  max-width: 100ch;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  font-family: "Avenir";
+}
+
+.description-price p:last-child {
+  font-family: "Avenir";
+  margin-top: 20px;
+  color: #536974 !important;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.seperate {
+  border-top: 1px solid #954076;
+  border-top-width: 2px;
+  width: 150px;
+}
+
+.order-btn {
+  font-size: 14px;
+  background-color: #5a8080;
+  border: none;
+  padding: 10px;
+  font-family: "Avenir";
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.order-btn:hover {
+  color: #fff;
+}
+
+.image-only {
+  width: 500px;
+}
+
+.order-btn-cart {
+  margin-left: 20px;
+  padding: 9px;
+}
+
+@media only screen and (max-width: 900px) {
+  .image-only {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .image-only {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .product-details {
+    margin-left: 50px;
+  }
+
+  .image-only {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  .product-details {
+    margin-left: 25px;
+  }
+}

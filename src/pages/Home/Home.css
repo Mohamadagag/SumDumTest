@@ -1,0 +1,263 @@
+.home-products {
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.home-products div {
+  margin-left: 20px;
+}
+
+.everyday {
+  /* padding-top: 70px; */
+  padding: 0 10px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.everyday h1 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #393f46;
+  font-family: "Avenir Next";
+}
+
+.everyday p {
+  padding-top: 15px;
+  letter-spacing: 1px;
+  max-width: 100ch;
+  font-family: "Avenir";
+}
+
+.three-images {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.findus-section {
+  padding: 0 10px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.findus-section h1 {
+  color: #35464f;
+  letter-spacing: 1.5px;
+  font-family: "Avenir Next";
+}
+
+.findus-section p {
+  margin-top: 10px;
+  letter-spacing: 2px;
+  font-family: "Avenir";
+}
+
+.findus-map {
+  margin-top: 30px;
+}
+
+.findus-map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.image-hover-overlay {
+  position: relative;
+  width: 100%;
+}
+
+.image-hover-overlay:hover {
+  cursor: pointer;
+}
+
+.image {
+  height: 500px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(83, 118, 116, 0.7);
+  height: 100%;
+}
+
+.image-hover-overlay:hover .middle {
+  opacity: 1;
+}
+
+.text-move {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-family: "Avenir";
+  transition: all 0.75s ease;
+  font-size: 1.3rem;
+}
+
+.text {
+  color: white;
+  font-size: 2rem;
+  font-family: "Avenir";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+.hide-description {
+  display: none;
+}
+
+.description {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  transition: all 0.75s ease;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+.description p {
+  font-family: "Avenir";
+  padding: 0 60px;
+}
+
+.image-container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+.home-grid {
+  margin-top: 50px;
+}
+
+.home-grid div {
+  margin-right: 20px;
+}
+
+.home-grid div:last-child {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 1330px) {
+  .home-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .home-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .home-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 50px;
+  }
+
+  .image-only {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .carousel-indicators {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .home-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 50px;
+  }
+  .home-products div {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .three-images {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .three-images .image-container {
+    margin-bottom: 5px;
+    height: 400px;
+  }
+  .image {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .findus-section h1,
+  .findus-section p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .description {
+    top: 26%;
+  }
+
+  .description p {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and(max-width:344px) {
+  .carousel-order-btn {
+    left: 24% !important;
+    bottom: 10% !important;
+  }
+}
+
+@media only screen and(max-width:310px) {
+  .carousel-order-btn {
+    bottom: 5% !important;
+  }
+}

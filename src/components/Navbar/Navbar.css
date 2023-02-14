@@ -1,0 +1,74 @@
+.header {
+  margin-bottom: 30px;
+}
+
+.top-header {
+  background-color: rgb(53, 70, 79) !important;
+  line-height: 1em;
+  height: 2rem;
+}
+
+.main-header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo img {
+  height: 100px;
+  object-fit: cover;
+}
+
+.icons {
+  display: flex;
+  position: absolute;
+  right: 7rem;
+}
+
+.shopping-icon:hover {
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.shopping-icon {
+  margin-left: 20px;
+  transform: rotateY(180deg);
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-family: "Avenir";
+  text-decoration: none;
+  margin-left: 20px;
+  color: #000;
+}
+
+nav ul li a:hover {
+  color: #be657e;
+}
+
+ul {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+*:focus {
+  outline: none;
+}

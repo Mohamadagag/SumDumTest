@@ -1,0 +1,121 @@
+.shop-container {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 0 100px;
+}
+
+.product-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 50px;
+}
+
+.product-grid a {
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.center-product-filtering {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.product-filtering {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-filtering a:last-child {
+  margin-right: 0;
+}
+
+.search-container input {
+  padding: 6px 0 6px 6px;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  font-family: "Avenir";
+}
+
+.search {
+  position: relative;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  right: 0px;
+  top: 4px;
+}
+
+.product-filtering-btns button {
+  font-family: "Avenir";
+  border: none;
+  background-color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.product-filtering-btns button:hover,
+.product-filtering-btns button:focus {
+  background-color: #5a8080;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.mobile-filter {
+  display: none;
+}
+
+.form-group select {
+  width: 200px;
+}
+
+@media only screen and (max-width: 1118px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-grid {
+    padding: 0px;
+  }
+
+  .product-filtering-btns {
+    display: none;
+  }
+
+  .mobile-filter {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .shop-container {
+    padding: 0;
+  }
+
+  .search {
+    margin-bottom: 20px;
+  }
+
+  .search-container input {
+    padding: 6px 0;
+  }
+}

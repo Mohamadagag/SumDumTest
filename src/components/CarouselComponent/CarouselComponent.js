@@ -13,8 +13,7 @@ const CarouselComponent = () => {
           <h3 className="carousel-title">Entremets</h3>
           <p className="carousel-description">
             Full Cakes Available on pre-order. Moist and airy hazelnut sponge
-            cake topped with hazelnut crunch, perfect for your parties or
-            special occasions.
+            cake topped with hazelnut crunch.
           </p>
           <Link to="/shop" className="carousel-order-btn">
             ORDER NOW

@@ -48,22 +48,24 @@ const ProductDetails = () => {
           <div className="image-only">
             <img src={product.image} />
           </div>
-          <h2>{product.name}</h2>
         </div>
-        <div className="seperate"></div>
-        <div className="description-price">
-          <p>{product.description}</p>
-          <p>Price: {product.price} AED</p>
+        <div className="product-details-right">
+          <div className="description-price">
+            <h2>{product.name}</h2>
+            <div className="seperate"></div>
+            <p className="product-desc">{product.description}</p>
+            <p>Price: {product.price} AED</p>
+          </div>
+          <a className="order-btn" href={product.linkButton} target="_blank">
+            Order Through Whatsapp
+          </a>
+          <button
+            className="order-btn  order-btn-cart"
+            onClick={() => handleAdd(product)}
+          >
+            Add to Cart
+          </button>
         </div>
-        <a className="order-btn" href={product.linkButton} target="_blank">
-          Order Through Whatsapp
-        </a>
-        <button
-          className="order-btn  order-btn-cart"
-          onClick={() => handleAdd(product)}
-        >
-          Add to Cart
-        </button>
       </div>
       <Footer />
     </div>

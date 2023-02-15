@@ -9,14 +9,15 @@
   object-fit: cover;
 }
 
-.image-description h2 {
+.description-price h2 {
   font-family: "Avenir";
   margin-top: 40px;
   color: #536974;
 }
 
-.description-price p:first-child {
-  max-width: 100ch;
+.product-desc {
+  text-align: justify;
+  max-width: 53ch;
   margin-top: 20px;
   letter-spacing: 1px;
   font-family: "Avenir";
@@ -61,9 +62,24 @@
   padding: 9px;
 }
 
+.product-details {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1040px) {
+  .product-details {
+    margin-left: 0;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .image-only {
     width: 600px;
+  }
+
+  .product-details {
+    flex-direction: column;
   }
 }
 
@@ -85,6 +101,6 @@
 
 @media only screen and (max-width: 368px) {
   .product-details {
-    margin-left: 25px;
+    margin-left: 10px;
   }
 }

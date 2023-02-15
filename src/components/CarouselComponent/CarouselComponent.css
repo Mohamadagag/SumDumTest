@@ -45,6 +45,11 @@
   margin: 0 auto;
 }
 
+.carousel-inner div:nth-child(2) .carousel-caption .carousel-title,
+.carousel-inner div:nth-child(2) .carousel-caption .carousel-description {
+  color: #35464f;
+}
+
 @media only screen and (max-width: 1875px) {
   .carousel-caption {
     top: 40%;

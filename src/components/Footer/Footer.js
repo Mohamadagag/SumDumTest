@@ -3,6 +3,7 @@ import { BsFacebook } from "react-icons/bs";
 import { TbBrandTiktok } from "react-icons/tb";
 import { AiOutlineInstagram } from "react-icons/ai";
 import LogoAndCards from "../../assets/Logo-and-cards.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,9 +12,16 @@ const Footer = () => {
         <div className="first-div">
           <h5>CONTACT US</h5>
           <div>
-            <p>info@toutdesweet.ae</p>
-            <p>+971 43264473</p>
-            <p>+971 501077848</p>
+            <p>
+              <a href="mailto:info@toutdesweet.ae">info@toutdesweet.ae</a>
+            </p>
+            <p>
+              <a href="tel:+971 43264473">+971 43264473</a>
+            </p>
+
+            <p>
+              <a href="tel:+971 501077848">+971 501077848</a>
+            </p>
           </div>
         </div>
         <div className="second-div">
@@ -28,9 +36,9 @@ const Footer = () => {
           <div>
             <p className="terms">
               please refer to our
-              <a href="#" className="footer-terms">
-                &nbsp;terms and conditions&nbsp;
-              </a>
+              <Link to="/terms-and-conditions" className="footer-terms">
+                &nbsp; terms and conditions &nbsp;
+              </Link>
               to know more about orders, payments, refunds...
             </p>
           </div>
@@ -45,23 +53,38 @@ const Footer = () => {
       </div>
       <div className="bottom-footer">
         <div>
-          <a href="https://www.facebook.com/toutdesweetae/" target="_blank">
+          <a
+            href="https://www.facebook.com/toutdesweetae/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <BsFacebook className="footer-icon" />
           </a>
         </div>
         <div className="click-icon">
-          <a href="https://www.instagram.com/toutdesweetae/" target="_blank">
+          <a
+            href="https://www.instagram.com/toutdesweetae/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <AiOutlineInstagram className="insta-icon move-footer-icon" />
           </a>
         </div>
         <div className="click-icon">
-          <a href="https://www.tiktok.com/@toutdesweet.ae" target="_blank">
+          <a
+            href="https://www.tiktok.com/@toutdesweet.ae"
+            rel="noreferrer"
+            target="_blank"
+          >
             <TbBrandTiktok className="tiktok-icon move-footer-icon" />
           </a>
         </div>
-
         <div className="payment-pic">
-          <img src={LogoAndCards} draggable={false} />
+          <img
+            src={LogoAndCards}
+            alt="Visa-Mastercard Logo"
+            draggable={false}
+          />
         </div>
       </div>
     </div>

@@ -116,6 +116,11 @@
   width: 100px;
 }
 
+.first-div a {
+  color: #000;
+  font-family: "Avenir";
+}
+
 @media only screen and (max-width: 1190px) {
   .footer-content {
     padding: 0 40px;

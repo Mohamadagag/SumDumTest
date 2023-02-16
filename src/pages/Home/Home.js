@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -12,7 +12,7 @@ import Accordion from "../../components/Accordion/Accordion";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import image1 from "../../assets/TDS-HEADER N IMAGES_our concept.png";
-import image2 from "../../assets/TDS-HEADER N IMAGES_our value 1.png";
+import image2 from "../../assets/TDS-HEADER N IMAGES_our value 3.png";
 import image3 from "../../assets/team.jpeg";
 
 const Home = () => {
@@ -122,7 +122,10 @@ const Home = () => {
           <p>We are Located in Shop 14, Block 4, Wasl Square, Dubai-U.A.E.</p>
         </div>
         <div className="findus-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.534106585011!2d55.23520566523074!3d25.18520451747383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d6ee219c35%3A0x372e42ea657fd673!2sTout%20De%20Sweet!5e0!3m2!1sen!2slb!4v1674683219240!5m2!1sen!2slb"></iframe>
+          <iframe
+            title="ToutDeSweet Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.534106585011!2d55.23520566523074!3d25.18520451747383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d6ee219c35%3A0x372e42ea657fd673!2sTout%20De%20Sweet!5e0!3m2!1sen!2slb!4v1674683219240!5m2!1sen!2slb"
+          ></iframe>
         </div>
       </div>
       <Footer />

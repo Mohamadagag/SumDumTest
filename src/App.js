@@ -6,6 +6,7 @@ import Findus from "./pages/Findus/Findus";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Cart from "./pages/Cart/Cart";
 import Notfound from "./pages/Notfound/Notfound";
+import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/itemDetail/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/*" element={<Notfound />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
     </div>
   );

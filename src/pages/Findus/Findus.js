@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import "./Findus.css";
-import LeftImage from "../../assets/new.jpg";
+import LeftImage from "../../assets/leftImage.jpg";
 import Directions from "../../assets/Directions.jpg";
 import Footer from "../../components/Footer/Footer";
 

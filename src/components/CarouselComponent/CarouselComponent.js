@@ -13,8 +13,8 @@ const CarouselComponent = () => {
         <Carousel.Caption>
           <h3 className="carousel-title">ENTREMET</h3>
           <p className="carousel-description">
-            Full Cakes Available on pre-order. Moist and airy hazelnut sponge
-            cake topped with hazelnut crunch.
+            A crispy golden crust, a thin cake or almond cream, a smooth custard
+            or creamy ganache.. and a lot of pleasure!
           </p>
           <Link to="/shop" className="carousel-order-btn">
             ORDER NOW
@@ -41,8 +41,8 @@ const CarouselComponent = () => {
         <Carousel.Caption>
           <h3 className="carousel-title">POUNDCAKE</h3>
           <p className="carousel-description">
-            Madeleines and financiers… the perfect tiny treats you can take with
-            you everywhere, and enjoy at any time of the day.
+            Moist and light poundcakes, or “gâteaux de voyage”, perfect for your
+            breakfasts or afternoon snacks.
           </p>
           <Link to="/shop" className="carousel-order-btn">
             ORDER NOW

@@ -21,3 +21,7 @@
 .css-ahj2mt-MuiTypography-root {
   font-family: "Avenir" !important;
 }
+
+.css-67l5gl::before {
+  display: none !important;
+}

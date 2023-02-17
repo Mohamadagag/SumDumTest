@@ -122,11 +122,16 @@
 }
 
 .change:hover {
-  color: #5a8080;
+  color: #5a8080 !important;
 }
 
 .css-9l3uo3 {
   font-family: "Avenir" !important;
+}
+
+.css-67l5gl:first-of-type {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
 }
 
 @media only screen and (max-width: 1190px) {

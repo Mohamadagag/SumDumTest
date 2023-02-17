@@ -13,14 +13,20 @@ const Footer = () => {
           <h5>CONTACT US</h5>
           <div>
             <p>
-              <a href="mailto:info@toutdesweet.ae">info@toutdesweet.ae</a>
+              <a href="mailto:info@toutdesweet.ae" className="change">
+                info@toutdesweet.ae
+              </a>
             </p>
             <p>
-              <a href="tel:+971 43264473">+971 43264473</a>
+              <a href="tel:+971 43264473" className="change">
+                +971 43264473
+              </a>
             </p>
 
             <p>
-              <a href="tel:+971 501077848">+971 501077848</a>
+              <a href="tel:+971 501077848" className="change">
+                +971 501077848
+              </a>
             </p>
           </div>
         </div>

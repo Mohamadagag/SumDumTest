@@ -13,20 +13,14 @@ const Footer = () => {
           <h5>CONTACT US</h5>
           <div>
             <p>
-              <a className="change" href="mailto:info@toutdesweet.ae">
-                info@toutdesweet.ae
-              </a>
+              <a href="mailto:info@toutdesweet.ae">info@toutdesweet.ae</a>
             </p>
             <p>
-              <a className="change" href="tel:+971 43264473">
-                +971 43264473
-              </a>
+              <a href="tel:+971 43264473">+971 43264473</a>
             </p>
 
             <p>
-              <a className="change" href="tel:+971 501077848">
-                +971 501077848
-              </a>
+              <a href="tel:+971 501077848">+971 501077848</a>
             </p>
           </div>
         </div>
@@ -42,7 +36,7 @@ const Footer = () => {
           <div>
             <p className="terms">
               please refer to our
-              <Link to="/terms-and-conditions" className="footer-terms change">
+              <Link to="/terms-and-conditions" className="footer-terms">
                 &nbsp; terms and conditions &nbsp;
               </Link>
               to know more about orders, payments, refunds...

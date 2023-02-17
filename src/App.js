@@ -7,6 +7,7 @@ import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Cart from "./pages/Cart/Cart";
 import Notfound from "./pages/Notfound/Notfound";
 import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 function App() {
   return (
@@ -20,6 +21,12 @@ function App() {
         <Route path="/*" element={<Notfound />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
+      <FloatingWhatsApp
+        phoneNumber="70575419"
+        accountName="Tout De Sweet"
+        allowEsc
+        allowClickAway
+      />
     </div>
   );
 }

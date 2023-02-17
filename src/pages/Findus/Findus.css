@@ -112,7 +112,7 @@
 .form-email input,
 .second-section form textarea {
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .form-email ::placeholder,
@@ -146,6 +146,22 @@
   width: 49%;
 }
 
+.second-section form {
+  padding: 4rem 13rem 0 13rem;
+}
+
+@media only screen and (max-width: 2248px) {
+  .second-section form {
+    padding: 4rem 7rem 0 7rem;
+  }
+}
+
+@media only screen and (max-width: 1948px) {
+  .second-section form {
+    padding: 4rem 5rem 0 5rem;
+  }
+}
+
 @media only screen and (max-width: 1900px) {
   .first-section {
     margin-left: 28%;
@@ -155,6 +171,12 @@
 @media only screen and (max-width: 1669px) {
   .first-section {
     margin-left: 25%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .second-section form {
+    padding: 3rem 3rem 0 3rem;
   }
 }
 

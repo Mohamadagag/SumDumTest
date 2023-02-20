@@ -8,7 +8,9 @@ const Navbar = () => {
       <div className="top-header"></div>
       <div className="main-header">
         <div className="logo">
-          <img src={Logo} alt="logo" />
+          <Link to="/">
+            <img src={Logo} alt="logo" />
+          </Link>
         </div>
       </div>
       <nav className="header-navigation">

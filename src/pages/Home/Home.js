@@ -62,13 +62,10 @@ const Home = () => {
       <div className="everyday">
         <h1>EVERY DAY IS A TREAT DAY</h1>
         <p>
-          We welcome you every day starting from 8am to enjoy viennoiseries and
-          treats (Croissants, financiers, madeleines, poundcakes, eclairs,
-          tartes, …).
-        </p>
-        <p>
-          Our customers are welcome in our boutique to have a coffee or tea with
-          our viennoiseries and delights.
+          Start your day with a touch of elegance and a taste of France! Savor
+          the sweet moments of life and indulge in our vibrant array of
+          viennoiseries and treats, including croissants,financiers, and tartes
+          while sipping on a cup of coffee or tea in our charming boutique.
         </p>
       </div>
       <div>
@@ -96,7 +93,7 @@ const Home = () => {
           image={image1}
           title={"OUR CONCEPT"}
           description={
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            "Tout de Sweet is more than just a continuation of a home baking journey. It's an extension of life's journey where every color, scent, and flavor brings a sense of belonging to mystifying places. Tout de Sweet is a reflection of a passion to create and offer unique, exceptional artisanal cakes and desserts. It's where the finest ingredients and lightest emotions merge to create elegant and tasty creations."
           }
         />
 
@@ -104,14 +101,14 @@ const Home = () => {
           image={image2}
           title={"Our Values"}
           description={
-            "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            "Tout de Sweet provides exclusively handcrafted cakes and delicacies made from high-quality, natural ingredients without any preservatives. Our goal is to strike the perfect balance between excellent taste and reduced levels of sugar and gluten. When developing new items, we keep in mind the seasonal availability of ingredients and prioritize the use of the best quality components. Our focus is on creating unique flavor and texture combinations, while also delivering creative and sophisticated finishes. It's worth noting that all of our products are safe for pregnant women to enjoy!"
           }
         />
         <Accordion
           image={image3}
           title={"Our Team"}
           description={
-            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur"
+            "Our chefs are the finest in terms of their expertise, imagination, and meticulousness, ensuring the unfailing excellence of our products and a constant stream of new, distinctive, and exceptional offerings. Their love for both baking and art distinguishes Tout de Sweet as more than just a superb bakery, but a unique destination for culinary and dessert artistry."
           }
         />
       </div>

@@ -22,7 +22,7 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
       <FloatingWhatsApp
-        phoneNumber="70575419"
+        phoneNumber="971501077848"
         accountName="Tout De Sweet"
         allowEsc
         allowClickAway

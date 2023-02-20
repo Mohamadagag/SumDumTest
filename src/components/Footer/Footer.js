@@ -42,7 +42,7 @@ const Footer = () => {
           <div>
             <p className="terms">
               please refer to our
-              <Link to="/terms-and-conditions" className="footer-terms">
+              <Link to="/terms-and-conditions" className="footer-terms change">
                 &nbsp; terms and conditions &nbsp;
               </Link>
               to know more about orders, payments, refunds...
@@ -50,11 +50,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="fourth-div">
-          <h5>NEWSLETTER</h5>
-          <input placeholder="Email..." className="footer-input" />
-          <div>
-            <button className="send-button">SEND</button>
-          </div>
+          <form method="post">
+            <h5>NEWSLETTER</h5>
+            <input placeholder="Email..." className="footer-input" />
+            <div>
+              <button className="send-button">SUBSCRIBE</button>
+            </div>
+          </form>
         </div>
       </div>
       <div className="bottom-footer">

@@ -99,14 +99,14 @@ const Home = () => {
 
         <Accordion
           image={image2}
-          title={"Our Values"}
+          title={"OUR VALUES"}
           description={
             "Tout de Sweet provides exclusively handcrafted cakes and delicacies made from high-quality, natural ingredients without any preservatives. Our goal is to strike the perfect balance between excellent taste and reduced levels of sugar and gluten. When developing new items, we keep in mind the seasonal availability of ingredients and prioritize the use of the best quality components. Our focus is on creating unique flavor and texture combinations, while also delivering creative and sophisticated finishes. It's worth noting that all of our products are safe for pregnant women to enjoy!"
           }
         />
         <Accordion
           image={image3}
-          title={"Our Team"}
+          title={"OUR TEAM"}
           description={
             "Our chefs are the finest in terms of their expertise, imagination, and meticulousness, ensuring the unfailing excellence of our products and a constant stream of new, distinctive, and exceptional offerings. Their love for both baking and art distinguishes Tout de Sweet as more than just a superb bakery, but a unique destination for culinary and dessert artistry."
           }

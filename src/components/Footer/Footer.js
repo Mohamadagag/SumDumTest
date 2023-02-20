@@ -4,8 +4,22 @@ import { TbBrandTiktok } from "react-icons/tb";
 import { AiOutlineInstagram } from "react-icons/ai";
 import LogoAndCards from "../../assets/Logo-and-cards.png";
 import { Link } from "react-router-dom";
+import jsonp from "jsonp";
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const SubmitNewsletter = (e) => {
+    e.preventDefault();
+    const url =
+      "https://gmail.us21.list-manage.com/subscribe/post?u=b9733a63791de1ea2bfc0d5b5&amp;id=df7171fdbe&amp;f_id=00fbfbe1f0";
+    jsonp(`${url}&EMAIL=${email}`, { param: "c" }, (_, data) => {
+      const { msg, result } = data;
+      alert(msg);
+    });
+  };
+
   return (
     <div className="footer">
       <div className="footer-content">
@@ -49,10 +63,20 @@ const Footer = () => {
             </p>
           </div>
         </div>
+
         <div className="fourth-div">
-          <form method="post">
+          <form method="post" onSubmit={SubmitNewsletter}>
             <h5>NEWSLETTER</h5>
-            <input placeholder="Email..." className="footer-input" />
+            <input
+              placeholder="Email..."
+              className="footer-input"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              type="email"
+              name="EMAIL"
+              id="mce-EMAIL"
+              required
+            />
             <div>
               <button className="send-button">SUBSCRIBE</button>
             </div>

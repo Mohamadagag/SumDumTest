@@ -8,10 +8,12 @@ import Cart from "./pages/Cart/Cart";
 import Notfound from "./pages/Notfound/Notfound";
 import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <div>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />

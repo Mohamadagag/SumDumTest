@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="main-header">
         <div className="logo">
           <Link to="/">
-            <img src={Logo} alt="logo" />
+            <img src={Logo} alt="logo" draggable={false} />
           </Link>
         </div>
       </div>

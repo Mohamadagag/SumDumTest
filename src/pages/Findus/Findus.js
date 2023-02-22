@@ -3,8 +3,38 @@ import "./Findus.css";
 import LeftImage from "../../assets/leftImage.jpg";
 import Directions from "../../assets/Directions.jpg";
 import Footer from "../../components/Footer/Footer";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import Swal from "sweetalert2";
 
 const Findus = () => {
+  const form = useRef();
+
+  const SERVICE_ID = "service_pgdixjf";
+  const TEMPLATE_ID = "template_s9rfeso";
+  const USER_ID = "OyiMb7mglnBLo6VwG";
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
+      (result) => {
+        Swal.fire({
+          title: "Form Submitted",
+          icon: "success",
+          timer: 2000,
+          timerProgressBar: true,
+          toast: true,
+          position: "top-end",
+          showConfirmButton: false,
+        });
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+
   return (
     <div>
       <Navbar />
@@ -34,24 +64,35 @@ const Findus = () => {
 
         <div className="second-section">
           <div className="second-section-first">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <h1>GET IN TOUCH</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea commodo consequat.
+                If you have any questions about Tout De Sweet, please send an
+                email.
               </p>
               <div className="form-name">
-                <input type="text" placeholder="First Name" required />
-                <input type="text" placeholder="Last Name" required />
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  required
+                  name="first_name"
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                  name="last_name"
+                />
               </div>
               <div className="form-email">
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="Email" name="email" />
               </div>
               <div>
-                <textarea placeholder="write your message here..." rows="5" />
+                <textarea
+                  placeholder="write your message here..."
+                  rows="5"
+                  name="message"
+                />
               </div>
               <div className="form-icon-btn">
                 <button type="submit" className="form-btn">
@@ -61,7 +102,7 @@ const Findus = () => {
             </form>
           </div>
           <div className="second-section-second">
-            <img src={Directions} />
+            <img src={Directions} draggable={false} />
           </div>
         </div>
       </div>

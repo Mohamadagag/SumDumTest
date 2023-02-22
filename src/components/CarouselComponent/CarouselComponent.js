@@ -13,8 +13,8 @@ const CarouselComponent = () => {
         <Carousel.Caption>
           <h3 className="carousel-title">ENTREMET</h3>
           <p className="carousel-description">
-            The perfect solution for any celebration. From dreamy chocolate to
-            smooth caramel, unique cakes are always pre-ordered!
+            A crispy golden crust, a thin cake or almond cream, a smooth custard
+            or creamy ganache.. and a lot of pleasure!
           </p>
           <Link to="/shop" className="carousel-order-btn">
             ORDER NOW
@@ -27,9 +27,8 @@ const CarouselComponent = () => {
         <Carousel.Caption>
           <h3 className="carousel-title">VIENNOISERIES</h3>
           <p className="carousel-description">
-            Start your day right with our fresh & flaky pastries, baked to
-            perfection and handled with love. Every morning is sun-lit with
-            these viennoiseries.
+            Madeleines and financiers… the perfect tiny treats you can take with
+            you everywhere, and enjoy at any time of the day.
           </p>
           <Link to="/shop" className="carousel-order-btn">
             ORDER NOW
@@ -42,9 +41,8 @@ const CarouselComponent = () => {
         <Carousel.Caption>
           <h3 className="carousel-title">POUNDCAKE</h3>
           <p className="carousel-description">
-            Enjoy the classic taste of our rich and buttery pound cakes.
-            Available in a variety of flavors and made with only the finest
-            ingredients.
+            Moist and light poundcakes, or “gâteaux de voyage”, perfect for your
+            breakfasts or afternoon snacks.
           </p>
           <Link to="/shop" className="carousel-order-btn">
             ORDER NOW

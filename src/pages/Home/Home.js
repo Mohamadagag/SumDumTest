@@ -45,6 +45,7 @@ const Home = () => {
     const res = await axios.get(
       "https://tout-de-sweet-backend.vercel.app/api/products/last"
     );
+    console.log(res.data.response);
     try {
       setProduct(res.data.response);
     } catch (error) {
@@ -60,12 +61,13 @@ const Home = () => {
       </div>
 
       <div className="everyday">
-        <h1>EVERY DAY IS A TREAT DAY</h1>
+        <h1>Experience the cake and desserts artistry</h1>
         <p>
-          Start your day with a touch of elegance and a taste of France! Savor
-          the sweet moments of life and indulge in our vibrant array of
-          viennoiseries and treats, including croissants,financiers, and tartes
-          while sipping on a cup of coffee or tea in our charming boutique.
+          Tout de Sweet is the manifestation of a passion to create and offer
+          exceptional and artisanal cakes and desserts. It's where the finest
+          ingredients and lightest feelings meet and merge into beautiful
+          creations of unique taste and elegant image. Every color, every smell,
+          and every flavor will take you to mystifying places of belonging.
         </p>
       </div>
       <div>
@@ -93,7 +95,7 @@ const Home = () => {
           image={image1}
           title={"OUR CONCEPT"}
           description={
-            "Tout de Sweet is more than just a continuation of a home baking journey. It's an extension of life's journey where every color, scent, and flavor brings a sense of belonging to mystifying places. Tout de Sweet is a reflection of a passion to create and offer unique, exceptional artisanal cakes and desserts. It's where the finest ingredients and lightest emotions merge to create elegant and tasty creations."
+            "At Tout de Sweet, we offer 100% handcrafted cakes and delights, made from quality raw products without preservatives and using first-in-class ingredients. We prepare our desserts daily to ensure they are offered at all times fresh and to the entire satisfaction of our clients. All our recipes are exceptionally built after rounds and rounds of trial and tasting till full “taste and look” satisfaction."
           }
         />
 
@@ -101,14 +103,14 @@ const Home = () => {
           image={image2}
           title={"OUR VALUES"}
           description={
-            "Tout de Sweet provides exclusively handcrafted cakes and delicacies made from high-quality, natural ingredients without any preservatives. Our goal is to strike the perfect balance between excellent taste and reduced levels of sugar and gluten. When developing new items, we keep in mind the seasonal availability of ingredients and prioritize the use of the best quality components. Our focus is on creating unique flavor and texture combinations, while also delivering creative and sophisticated finishes. It's worth noting that all of our products are safe for pregnant women to enjoy!"
+            "In everything we create, we aim to balance “less sugar and less gluten” with “great taste”. We also consider seasonality factor and availability of quality ingredients in every item we prepare, and every time we come up with a new creation. And throughout the process we look for unique flavors and textures combinations beside creative and elegant finishes. Note: all our products are also pregnant-friendly!"
           }
         />
         <Accordion
           image={image3}
           title={"OUR TEAM"}
           description={
-            "Our chefs are the finest in terms of their expertise, imagination, and meticulousness, ensuring the unfailing excellence of our products and a constant stream of new, distinctive, and exceptional offerings. Their love for both baking and art distinguishes Tout de Sweet as more than just a superb bakery, but a unique destination for culinary and dessert artistry."
+            "Our chefs are of the highest caliber of skillsets, creativity, and attention to details assuring the consistent quality of our products and the regular addition of what is new, different, and unique. Our team's passion for both baking and art makes of Tout de Sweet a distinctive desserts artistry and culinary experience beyond just a great pastry store."
           }
         />
       </div>

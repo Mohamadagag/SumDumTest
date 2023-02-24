@@ -45,7 +45,6 @@ const Home = () => {
     const res = await axios.get(
       "https://tout-de-sweet-backend.vercel.app/api/products/last"
     );
-    console.log(res.data.response);
     try {
       setProduct(res.data.response);
     } catch (error) {

@@ -7,7 +7,7 @@ const HomeProduct = ({ image, name, price }) => {
         <img src={image} alt={name} />
       </div>
       <span className="name">{name}</span>
-      <span className="price">{price}.00 AED</span>
+      {price === 0 ? null : <span className="price">{price}.00 AED</span>}
     </div>
   );
 };

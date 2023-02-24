@@ -54,7 +54,7 @@ const ProductDetails = () => {
             <h2>{product.name}</h2>
             <div className="seperate"></div>
             <p className="product-desc">{product.description}</p>
-            <p>Price: {product.price} AED</p>
+            {product.price === 0 ? null : <p>Price: {product.price} AED</p>}
           </div>
           <a className="order-btn" href={product.linkButton} target="_blank">
             Order Through Whatsapp

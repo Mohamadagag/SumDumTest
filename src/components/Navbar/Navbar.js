@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import Logo from "../../assets/Logo-without-background.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,24 +8,24 @@ const Navbar = () => {
       <div className="top-header"></div>
       <div className="main-header">
         <div className="logo">
-          <Link to="/">
+          <NavLink to="/">
             <img src={Logo} alt="logo" draggable={false} />
-          </Link>
+          </NavLink>
         </div>
       </div>
       <nav className="header-navigation">
         <ul>
           <li>
-            <Link to="/">HOME</Link>
+            <NavLink to="/">HOME</NavLink>
           </li>
           <li>
-            <Link to="/shop">OUR E-SHOP</Link>
+            <NavLink to="/shop">OUR E-SHOP</NavLink>
           </li>
           <li>
-            <Link to="/find-us">FIND US</Link>
+            <NavLink to="/find-us">FIND US</NavLink>
           </li>
           <li>
-            <Link to="/cart">CART</Link>
+            <NavLink to="/cart">CART</NavLink>
           </li>
         </ul>
       </nav>

@@ -60,7 +60,8 @@ nav ul li a {
   color: #000;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul a.active {
   color: #be657e;
 }
 

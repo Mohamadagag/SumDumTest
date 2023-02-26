@@ -99,7 +99,7 @@ ul {
     height: 100vh;
     z-index: 9999;
     margin-top: 30px;
-    padding: 0 5px;
+    padding: 0 30px;
     transition: all 0.3s ease-in;
     overflow: hidden;
     display: block;
@@ -127,6 +127,7 @@ ul {
 
   .mobile-header-navigation ul li {
     margin-top: 15px;
+    list-style: none;
   }
 
   .mobile-header-navigation ul li a {

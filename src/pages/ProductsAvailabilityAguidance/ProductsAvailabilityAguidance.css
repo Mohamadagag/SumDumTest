@@ -1,0 +1,23 @@
+.info-container {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.info-container h2 {
+  color: #35464f;
+  text-align: center;
+  font-family: "Avenir Next";
+}
+
+.info-container p {
+  max-width: 120ch;
+  font-family: "Avenir";
+  text-align: justify;
+}
+
+.info-text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

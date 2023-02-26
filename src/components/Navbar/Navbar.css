@@ -1,10 +1,10 @@
 .header {
+  position: relative;
   margin-bottom: 30px;
 }
 
 .top-header {
   background-color: rgb(53, 70, 79) !important;
-  line-height: 1em;
   height: 2rem;
 }
 
@@ -53,15 +53,18 @@ nav ul li {
   list-style: none;
 }
 
-nav ul li a {
+nav ul li a,
+.mobile-header-navigation ul li a {
   font-family: "Avenir";
   text-decoration: none;
   margin-left: 20px;
   color: #000;
+  letter-spacing: 2px;
 }
 
 nav ul li a:hover,
-nav ul a.active {
+nav ul a.active,
+.mobile-header-navigation ul li a.active {
   color: #be657e;
 }
 
@@ -72,4 +75,88 @@ ul {
 
 *:focus {
   outline: none;
+}
+
+.menu-icon,
+.close-icon {
+  display: none;
+}
+
+.hide-nav,
+.mobile-header-navigation {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  .mobile-header-navigation {
+    position: absolute;
+    background-color: rgb(53, 70, 79) !important;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 9999;
+    margin-top: 30px;
+    padding: 0 5px;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    font-size: 1.4rem;
+  }
+
+  .close-icon {
+    font-size: 1.2rem;
+    display: block;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+  }
+
+  .mobile-header-navigation ul {
+    flex-direction: column;
+  }
+
+  .mobile-header-navigation ul li {
+    margin-top: 15px;
+  }
+
+  .mobile-header-navigation ul li a {
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .logo img {
+    height: 80px;
+  }
+
+  .menu-icon {
+    top: 85px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main-header {
+    justify-content: start;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .logo img {
+    height: 65px;
+  }
+
+  .menu-icon {
+    top: 80px;
+  }
 }

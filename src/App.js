@@ -9,6 +9,7 @@ import Notfound from "./pages/Notfound/Notfound";
 import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import ProductsAvailabilityAguidance from "./pages/ProductsAvailabilityAguidance/ProductsAvailabilityAguidance";
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
         <Route path="/itemDetail/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/*" element={<Notfound />} />
+        <Route
+          path="/products-availability-guidance"
+          element={<ProductsAvailabilityAguidance />}
+        />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
       <FloatingWhatsApp

@@ -30,3 +30,35 @@
   font-weight: 600;
   font-size: 1.2rem;
 }
+
+.skeleton-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 50px;
+}
+
+@media only screen and (max-width: 1216px) {
+  .skeleton-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1028px) {
+  .skeleton-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .skeleton-grid {
+    grid-column-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .skeleton-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

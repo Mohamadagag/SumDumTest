@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import "./Shop.css";
 import { CartContext } from "../../context/CartContext";
 import Navbar from "../../components/Navbar/Navbar";
+import HomeSkeletonGrid from "../../components/product/HomeSkeletonGrid";
 
 const Shop = () => {
   const [product, setProduct] = useState([]);
@@ -14,6 +15,7 @@ const Shop = () => {
   const [category, setCategory] = useState("");
   const [active, setActive] = useState(false);
   const { cart } = useContext(CartContext);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     getProducts();
@@ -26,6 +28,7 @@ const Shop = () => {
     );
     try {
       setProduct(res.data.response);
+      setIsLoaded(true);
     } catch (error) {
       console.log(error);
     }
@@ -91,19 +94,23 @@ const Shop = () => {
             </div>
           </div>
         </div>
-        <div className="product-grid">
-          {filteredProducts.map((product) => {
-            return (
-              <Link to={`/itemDetail/${product._id}`} key={product._id}>
-                <Product
-                  image={product.image[0]}
-                  name={product.name}
-                  price={product.price}
-                />
-              </Link>
-            );
-          })}
-        </div>
+        {isLoaded ? (
+          <div className="product-grid">
+            {filteredProducts.map((product) => {
+              return (
+                <Link to={`/itemDetail/${product._id}`} key={product._id}>
+                  <Product
+                    image={product.image[0]}
+                    name={product.name}
+                    price={product.price}
+                  />
+                </Link>
+              );
+            })}
+          </div>
+        ) : (
+          <HomeSkeletonGrid SKGrid="product-grid" />
+        )}
       </div>
       <Footer />
     </div>

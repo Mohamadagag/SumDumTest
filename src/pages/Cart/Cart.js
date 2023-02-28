@@ -52,7 +52,7 @@ const Cart = () => {
             {cart.length == 0 ? null : (
               <a
                 target="_blank"
-                href={`https://wa.me/70575419?text=Hi TDS, I came from your website. I want to order ${cartItems}.`}
+                href={`https://wa.me/971501077848?text=Hi TDS, I came from your website. I want to order ${cartItems}.`}
               >
                 Checkout
               </a>

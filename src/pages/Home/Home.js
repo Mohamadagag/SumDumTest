@@ -137,9 +137,10 @@ const Home = () => {
                 <div className="single-under-map-item-desc">
                   <h4>Delivery cakes</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis vel quam nisl. Proin eget tempus ante. Curabitur in
-                    lacinia enim. Nullam at lacus a nulla pretium porta quis vel
+                    Our signature cakes can be pre-ordered upon 2 to 3 days
+                    earlier notice, via either direct phone call or whatsapp
+                    message. Cakes and big orders can be delivered across all
+                    Dubai via our delivery partner.
                   </p>
                 </div>
               </div>
@@ -150,9 +151,9 @@ const Home = () => {
                 <div className="single-under-map-item-desc">
                   <h4>Delivery small items</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis vel quam nisl. Proin eget tempus ante. Curabitur in
-                    lacinia enim. Nullam at lacus a nulla pretium porta quis vel
+                    Our tartes, eclairs, and other delights are available for
+                    delivery via delivery aggregator “Deliveroo” or for pick-up
+                    by simply referring directly to our shop.
                   </p>
                 </div>
               </div>
@@ -163,9 +164,10 @@ const Home = () => {
                 <div className="single-under-map-item-desc">
                   <h4>Catering events</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis vel quam nisl. Proin eget tempus ante. Curabitur in
-                    lacinia enim. Nullam at lacus a nulla pretium porta quis vel
+                    Tout de Sweet caters for the different types of events in
+                    Dubai whether weddings, birthdays and celebrations, business
+                    conferences, or others. Please reach out to us via contact
+                    details shared on our website.
                   </p>
                 </div>
               </div>
@@ -176,9 +178,10 @@ const Home = () => {
                 <div className="single-under-map-item-desc">
                   <h4>Hosting events</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis vel quam nisl. Proin eget tempus ante. Curabitur in
-                    lacinia enim. Nullam at lacus a nulla pretium porta quis vel
+                    We can also host small events such as high-tea gatherings,
+                    Pop-up exhibitions and others in our homy and cozy venue
+                    located in Al Wasl - Dubai. We are always happy to discuss
+                    with you.
                   </p>
                 </div>
               </div>

@@ -175,6 +175,7 @@
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
   place-items: center;
+  align-items: start;
 }
 
 .single-under-map-item-img img {
@@ -191,7 +192,7 @@
   font-family: "Avenir";
   color: #fff;
   text-align: justify;
-  max-width: 23ch;
+  max-width: 30ch;
   margin-bottom: 0;
   line-height: 1.2;
 }
@@ -200,7 +201,7 @@
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1720px) {
   .under-map-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -214,7 +215,7 @@
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1315px) {
   .under-map-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -224,7 +225,7 @@
   }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 880px) {
   .under-map-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

@@ -14,6 +14,10 @@ import "react-multi-carousel/lib/styles.css";
 import image1 from "../../assets/TDS-HEADER N IMAGES_our concept.png";
 import image2 from "../../assets/TDS-HEADER N IMAGES_our value 3.png";
 import image3 from "../../assets/team.jpeg";
+import pic1 from "../../assets/pic1.png";
+import pic2 from "../../assets/pic2.png";
+import pic3 from "../../assets/pic3.png";
+import pic4 from "../../assets/pic4.png";
 
 const Home = () => {
   const [product, setProduct] = useState([]);
@@ -124,6 +128,62 @@ const Home = () => {
             title="ToutDeSweet Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.534106585011!2d55.23520566523074!3d25.18520451747383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d6ee219c35%3A0x372e42ea657fd673!2sTout%20De%20Sweet!5e0!3m2!1sen!2slb!4v1674683219240!5m2!1sen!2slb"
           ></iframe>
+          <div className="under-map">
+            <div className="under-map-grid">
+              <div className="single-under-map-item">
+                <div className="single-under-map-item-img">
+                  <img src={pic1} />
+                </div>
+                <div className="single-under-map-item-desc">
+                  <h4>Delivery cakes</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis vel quam nisl. Proin eget tempus ante. Curabitur in
+                    lacinia enim. Nullam at lacus a nulla pretium porta quis vel
+                  </p>
+                </div>
+              </div>
+              <div className="single-under-map-item">
+                <div className="single-under-map-item-img">
+                  <img src={pic2} />
+                </div>
+                <div className="single-under-map-item-desc">
+                  <h4>Delivery small items</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis vel quam nisl. Proin eget tempus ante. Curabitur in
+                    lacinia enim. Nullam at lacus a nulla pretium porta quis vel
+                  </p>
+                </div>
+              </div>
+              <div className="single-under-map-item">
+                <div className="single-under-map-item-img">
+                  <img src={pic3} />
+                </div>
+                <div className="single-under-map-item-desc">
+                  <h4>Catering events</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis vel quam nisl. Proin eget tempus ante. Curabitur in
+                    lacinia enim. Nullam at lacus a nulla pretium porta quis vel
+                  </p>
+                </div>
+              </div>
+              <div className="single-under-map-item">
+                <div className="single-under-map-item-img">
+                  <img src={pic4} />
+                </div>
+                <div className="single-under-map-item-desc">
+                  <h4>Hosting events</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis vel quam nisl. Proin eget tempus ante. Curabitur in
+                    lacinia enim. Nullam at lacus a nulla pretium porta quis vel
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

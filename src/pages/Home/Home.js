@@ -13,7 +13,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import image1 from "../../assets/TDS-HEADER N IMAGES_our concept.png";
 import image2 from "../../assets/TDS-HEADER N IMAGES_our value 3.png";
-import image3 from "../../assets/team.jpeg";
+import image3 from "../../assets/team.png";
 import pic1 from "../../assets/pic1.png";
 import pic2 from "../../assets/pic2.png";
 import pic3 from "../../assets/pic3.png";

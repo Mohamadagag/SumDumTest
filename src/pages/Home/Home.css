@@ -336,6 +336,10 @@
   .description p {
     padding: 0 30px;
   }
+
+  .single-under-map-item {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 372px) {

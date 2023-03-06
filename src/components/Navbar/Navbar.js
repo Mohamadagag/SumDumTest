@@ -13,7 +13,6 @@ import { BsTelephone } from "react-icons/bs";
 import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
 import { TbBrandTiktok } from "react-icons/tb";
 import { FaFacebookF } from "react-icons/fa";
-import Breadcrumb from "../Breadcrumb/Breadcrumb";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -93,10 +92,18 @@ const Navbar = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 1,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
       items: 1,
     },
   };

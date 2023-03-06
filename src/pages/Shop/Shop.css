@@ -1,7 +1,7 @@
 .shop-container {
   margin-bottom: 50px;
-  margin-top: 50px;
   padding: 0 100px;
+  margin-top: 270px;
 }
 
 .product-grid {
@@ -89,6 +89,10 @@
 }
 
 @media only screen and (max-width: 700px) {
+  .shop-container {
+    margin-top: 260px;
+  }
+
   .product-grid {
     grid-template-columns: repeat(1, 1fr);
   }

@@ -8,7 +8,7 @@ const Product = ({ name, price, image, category }) => {
       </div>
       <span className="product-name">{name}</span>
       {price === 0 ? null : (
-        <span className="product-price">{price}.00 AED</span>
+        <span className="product-price">AED {price}.00</span>
       )}
     </div>
   );

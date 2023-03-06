@@ -14,7 +14,6 @@ const Shop = () => {
   const [categories, setCategories] = useState([]);
   const [category, setCategory] = useState("");
   const [active, setActive] = useState(false);
-  const { cart } = useContext(CartContext);
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {

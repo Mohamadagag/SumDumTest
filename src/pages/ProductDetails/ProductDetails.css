@@ -1,5 +1,5 @@
 .product-details {
-  margin-top: 30px;
+  margin-top: 260px;
   margin-left: 100px;
   margin-bottom: 50px;
   padding: 0 10px;
@@ -38,6 +38,7 @@
 }
 
 .order-btn {
+  margin-left: 20px;
   font-size: 14px;
   background-color: #5a8080;
   border: none;
@@ -65,6 +66,64 @@
 .product-details {
   display: flex;
   align-items: center;
+}
+
+.cart-icons {
+  border: none;
+  background-color: transparent;
+}
+
+.add-rm-container {
+  border: 2px solid #000;
+  width: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.sum-container {
+  display: flex;
+  align-items: center;
+}
+
+.sum-container h5 {
+  margin: 0 20px 0 0;
+  font-family: "Avenir";
+}
+
+.you-may-like-sec h1 {
+  font-family: "Avenir Next";
+  color: #35464f;
+  margin-left: 50px;
+}
+
+.you-make-like {
+  font-family: "Avenir Next";
+  margin-left: 140px;
+  color: #35464f;
+}
+
+.you-make-like-container {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 2100px) {
+  .you-make-like {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 2100px) {
+  .you-make-like {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .you-make-like {
+    margin-left: 60px;
+  }
 }
 
 @media only screen and (max-width: 1040px) {
@@ -96,6 +155,12 @@
 
   .image-only {
     width: 300px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .you-make-like {
+    margin-left: 10px;
   }
 }
 

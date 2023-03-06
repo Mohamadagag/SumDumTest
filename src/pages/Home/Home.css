@@ -1,3 +1,7 @@
+.home-container {
+  margin-top: 260px;
+}
+
 .home-products {
   padding-top: 50px;
   padding-left: 10px;
@@ -80,10 +84,6 @@
   cursor: pointer;
 }
 
-.image {
-  height: 500px;
-}
-
 .middle {
   transition: 0.5s ease;
   opacity: 0;
@@ -144,7 +144,6 @@
 .image-container {
   display: flex;
   width: 100%;
-  height: 500px;
 }
 
 .home-grid {
@@ -179,7 +178,7 @@
 }
 
 .single-under-map-item-img img {
-  width: 120px;
+  width: 90px;
   margin-right: 20px;
 }
 
@@ -204,14 +203,24 @@
 @media only screen and (max-width: 1720px) {
   .under-map-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2fr;
     grid-column-gap: 10px;
     justify-content: center;
   }
 
+  .single-under-map-item-desc p {
+    max-width: 45ch;
+  }
+
   .single-under-map-item {
     margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1156px) {
+  .single-under-map-item-desc p {
+    max-width: 35ch;
   }
 }
 
@@ -244,6 +253,12 @@
   }
   .home-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .single-under-map-item-desc p {
+    max-width: 60ch;
   }
 }
 
@@ -316,14 +331,26 @@
     margin-bottom: 5px;
     height: 400px;
   }
-  .image {
-    height: 400px;
-  }
 }
 
 @media only screen and (max-width: 655px) {
   .findus-section h1,
   .findus-section p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .single-under-map-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .single-under-map-item-desc p {
+    text-align: center;
+  }
+
+  .single-under-map-item {
     text-align: center;
   }
 }
@@ -336,20 +363,11 @@
   .description p {
     padding: 0 30px;
   }
-
-  .single-under-map-item {
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 372px) {
   .description p {
     padding: 0px 10px;
-  }
-
-  .single-under-map-item {
-    flex-direction: column;
-    align-items: center;
   }
 
   .single-under-map-item-img {

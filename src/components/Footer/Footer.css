@@ -4,7 +4,8 @@
   border-top: 1px solid #b8b8b8;
 }
 
-.footer p {
+.footer p,
+.bottom-footer {
   font-family: "Avenir";
 }
 
@@ -20,10 +21,10 @@
 }
 
 .bottom-footer {
-  position: relative;
-  margin-top: 20px;
+  margin-top: 30px;
   height: 4rem;
   background-color: #35464f;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,18 +111,37 @@
   font-weight: 600;
 }
 
-.payment-pic {
-  position: absolute;
-  right: 2rem;
-  width: 100px;
-}
-
 .first-div a {
   color: #000;
   font-family: "Avenir";
 }
 
 .change:hover {
+  color: #5a8080 !important;
+}
+
+.contact-icon {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+
+.contact-icons {
+  display: flex;
+}
+
+.f-icon {
+  font-size: 1.5rem;
+}
+
+.i-icon,
+.t-icon {
+  font-size: 1.6rem;
+}
+
+.f-icon:hover,
+.i-icon:hover,
+.t-icon:hover {
+  transform: translateY(-4px);
   color: #5a8080 !important;
 }
 
@@ -153,6 +173,19 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 60px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .bottom-footer {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .bottom-footer {
+    font-size: 0.7rem;
   }
 }
 

@@ -1,11 +1,13 @@
 import "./Footer.css";
-import { BsFacebook } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
 import { TbBrandTiktok } from "react-icons/tb";
 import { AiOutlineInstagram } from "react-icons/ai";
 import LogoAndCards from "../../assets/Logo-and-cards.png";
 import { Link } from "react-router-dom";
 import jsonp from "jsonp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsTelephone } from "react-icons/bs";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -20,6 +22,8 @@ const Footer = () => {
     });
   };
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="footer">
       <div className="footer-content">
@@ -28,20 +32,58 @@ const Footer = () => {
           <div>
             <p>
               <a href="mailto:info@toutdesweet.ae" className="change">
+                <span className="contact-icon">
+                  <AiOutlineMail />
+                </span>
                 info@toutdesweet.ae
               </a>
             </p>
             <p>
               <a href="tel:+971 43264473" className="change">
+                <span className="contact-icon">
+                  <BsTelephone />
+                </span>
                 +971 43264473
               </a>
             </p>
 
             <p>
               <a href="tel:+971 501077848" className="change">
+                <span className="contact-icon">
+                  <BsTelephone />
+                </span>
                 +971 501077848
               </a>
             </p>
+          </div>
+          <div className="contact-icons">
+            <div className="click-icon">
+              <a
+                href="https://www.facebook.com/toutdesweetae/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FaFacebookF className="f-icon" />
+              </a>
+            </div>
+            <div className="click-icon">
+              <a
+                href="https://www.instagram.com/toutdesweetae/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <AiOutlineInstagram className="i-icon" />
+              </a>
+            </div>
+            <div className="click-icon">
+              <a
+                href="https://www.tiktok.com/@toutdesweet.ae"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <TbBrandTiktok className="t-icon" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="second-div">
@@ -84,40 +126,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="bottom-footer">
-        <div>
-          <a
-            href="https://www.facebook.com/toutdesweetae/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <BsFacebook className="footer-icon" />
-          </a>
-        </div>
-        <div className="click-icon">
-          <a
-            href="https://www.instagram.com/toutdesweetae/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineInstagram className="insta-icon move-footer-icon" />
-          </a>
-        </div>
-        <div className="click-icon">
-          <a
-            href="https://www.tiktok.com/@toutdesweet.ae"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <TbBrandTiktok className="tiktok-icon move-footer-icon" />
-          </a>
-        </div>
-        <div className="payment-pic">
-          <img
-            src={LogoAndCards}
-            alt="Visa-Mastercard Logo"
-            draggable={false}
-          />
-        </div>
+        Copyright © {currentYear} Tout De Sweet all rights reserved. Empowered
+        by Advert Communications
       </div>
     </div>
   );

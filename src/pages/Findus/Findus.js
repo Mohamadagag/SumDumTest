@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import "./Findus.css";
 import LeftImage from "../../assets/leftImage.jpg";
-import Directions from "../../assets/Directions.jpg";
+import Directions from "../../assets/Directions.png";
 import Footer from "../../components/Footer/Footer";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";

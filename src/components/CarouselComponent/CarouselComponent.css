@@ -20,6 +20,8 @@
 .carousel-order-btn:hover {
   cursor: pointer;
   color: #35464f;
+  background-color: #c66c8a;
+  color: #fff;
 }
 
 .carousel-caption p {

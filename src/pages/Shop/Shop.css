@@ -5,7 +5,7 @@
 }
 
 .product-grid {
-  margin-top: 30px;
+  margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 0px;
@@ -73,6 +73,63 @@
 
 .form-group select {
   width: 200px;
+}
+
+.res-sec {
+  position: relative;
+}
+
+.search-box {
+  position: absolute;
+  right: 10%;
+  height: 45px;
+  background: #35464f;
+  line-height: 40px;
+  padding: 2px 1px 2px 13px;
+  border-radius: 60px;
+}
+.search-input {
+  background: #35464f;
+  color: #fff;
+  outline: none;
+  border: none;
+  line-height: -1px;
+  width: 0px;
+  float: left;
+  font-size: 14px;
+  transition: 0.7s ease;
+  font-family: "Avenir";
+}
+
+.search-box:hover > .search-input {
+  width: 240px;
+  margin: 0px 8px;
+}
+.search-input:focus {
+  width: 240px;
+  margin: 0px 8px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #151515;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ff5722;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 0.4s;
+}
+footer a:hover {
+  color: #ff6b3b;
 }
 
 @media only screen and (max-width: 1118px) {

@@ -33,6 +33,7 @@ const Navbar = () => {
   useEffect(() => {
     getProducts();
     getRndData();
+    console.log(cartItems);
   }, [cartItems]);
 
   const getProducts = async () => {

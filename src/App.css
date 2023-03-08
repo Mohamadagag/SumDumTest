@@ -5,3 +5,7 @@ p {
 .react-multiple-carousel__arrow {
   z-index: 99 !important;
 }
+
+.footer-whats footer {
+  height: 60px;
+}

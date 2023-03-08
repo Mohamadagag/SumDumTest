@@ -3,7 +3,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import { Link } from "react-router-dom";
-import Product from "../product/Product";
 import HomeProduct from "../HomeProduct/HomeProduct";
 
 const RandomProducts = () => {
@@ -49,7 +48,7 @@ const RandomProducts = () => {
         {product.map((product) => {
           return (
             <div key={product._id}>
-              <Link to={`/itemDetail/${product._id}`}>
+              <Link to={`/shop/${product._id}`}>
                 <HomeProduct
                   image={product.image[0]}
                   name={product.name}

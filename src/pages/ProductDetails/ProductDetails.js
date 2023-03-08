@@ -107,7 +107,7 @@ const ProductDetails = () => {
           {data.map((data) => {
             return (
               <div key={data._id}>
-                <Link to={`/itemDetail/${data._id}`}>
+                <Link to={`/shop/${data._id}`}>
                   <HomeProduct
                     image={data.image[0]}
                     name={data.name}

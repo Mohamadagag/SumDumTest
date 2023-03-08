@@ -132,6 +132,14 @@ footer a:hover {
   color: #ff6b3b;
 }
 
+.center-product-filtering {
+  padding-top: 10px;
+}
+
+.form-group select option {
+  font-family: "Avenir" !important;
+}
+
 @media only screen and (max-width: 1118px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);

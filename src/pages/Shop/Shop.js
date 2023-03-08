@@ -117,7 +117,7 @@ const Shop = () => {
             <div className="product-grid">
               {filteredProducts.map((product) => {
                 return (
-                  <Link to={`/itemDetail/${product._id}`} key={product._id}>
+                  <Link to={`/shop/${product._id}`} key={product._id}>
                     <Product
                       image={product.image[0]}
                       name={product.name}

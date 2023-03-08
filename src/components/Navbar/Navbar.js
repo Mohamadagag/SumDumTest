@@ -33,7 +33,6 @@ const Navbar = () => {
   useEffect(() => {
     getProducts();
     getRndData();
-    console.log(cartItems);
   }, [cartItems]);
 
   const getProducts = async () => {
@@ -202,7 +201,7 @@ const Navbar = () => {
                   {rndData &&
                     rndData.map((item, i) => {
                       return (
-                        <Link to={`/itemDetail/${item._id}`}>
+                        <Link to={`/shop/${item._id}`}>
                           <CartRndItem
                             key={i}
                             image={item.image}

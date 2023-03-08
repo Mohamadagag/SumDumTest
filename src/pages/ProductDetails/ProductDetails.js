@@ -9,7 +9,7 @@ import "./ProductDetails.css";
 import Carousel from "react-multi-carousel";
 import axios from "axios";
 import HomeProduct from "../../components/HomeProduct/HomeProduct";
-
+import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 const ProductDetails = () => {
   const { IncreseCartQuantity, DecreseCartQuantity, getItemQuantity } =
     useContext(CartContext);
@@ -67,39 +67,48 @@ const ProductDetails = () => {
   return (
     <div>
       <Navbar />
-      <div className="product-details">
-        <div className="image-description">
-          <div className="image-only">
-            <img src={product.image} />
+      <>
+        <div className="details-container">
+          <div className="shop-breadcrumb">
+            <Breadcrumb />
           </div>
-        </div>
-        <div className="product-details-right">
-          <div className="description-price">
-            <h2>{product.name}</h2>
-            <div className="seperate"></div>
-            <p className="product-desc">{product.description}</p>
-            {product.price === 0 ? null : <p>Price: AED {product.price}.00</p>}
-          </div>
-          <div className="sum-container">
-            <h5>Add to cart : </h5>
-            <div className="add-rm-container">
-              <button
-                onClick={() => DecreseCartQuantity(id)}
-                className="cart-icons"
-              >
-                <MdRemove />
-              </button>
-              <span>{quantity}</span>
-              <button
-                onClick={() => IncreseCartQuantity(id)}
-                className="cart-icons"
-              >
-                <GrFormAdd />
-              </button>
+          <div className="product-details">
+            <div className="image-description">
+              <div className="image-only">
+                <img src={product.image} />
+              </div>
+            </div>
+            <div className="product-details-right">
+              <div className="description-price">
+                <h2>{product.name}</h2>
+                <div className="seperate"></div>
+                <p className="product-desc">{product.description}</p>
+                {product.price === 0 ? null : (
+                  <p>Price: AED {product.price}.00</p>
+                )}
+              </div>
+              <div className="sum-container">
+                <h5>Add to cart : </h5>
+                <div className="add-rm-container">
+                  <button
+                    onClick={() => DecreseCartQuantity(id)}
+                    className="cart-icons"
+                  >
+                    <MdRemove />
+                  </button>
+                  <span>{quantity}</span>
+                  <button
+                    onClick={() => IncreseCartQuantity(id)}
+                    className="cart-icons"
+                  >
+                    <GrFormAdd />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </>
 
       <div className="you-make-like-container">
         <h1 className="you-make-like">You may also like</h1>

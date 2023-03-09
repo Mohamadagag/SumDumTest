@@ -328,8 +328,8 @@
     padding: 0 10px;
   }
   .three-images .image-container {
-    margin-bottom: 5px;
-    height: 400px;
+    margin-bottom: 10px;
+    /* height: 400px; */
   }
 }
 

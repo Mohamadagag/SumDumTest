@@ -39,10 +39,10 @@ const CarouselComponent = () => {
       <Carousel.Item>
         <img className="d-block w-100" src={Slide2} alt="First slide" />
         <Carousel.Caption>
-          <h3 className="carousel-title">POUNDCAKE</h3>
+          <h3 className="carousel-title">TARTS</h3>
           <p className="carousel-description">
-            Moist and light poundcakes, or “gâteaux de voyage”, perfect for your
-            breakfasts or afternoon snacks.
+            A crispy golden crust with diverse and creative twists of mousses or
+            crémeux.
           </p>
           <Link to="/shop" className="carousel-order-btn">
             ORDER NOW

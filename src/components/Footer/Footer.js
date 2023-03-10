@@ -126,8 +126,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="bottom-footer">
-        Copyright © {currentYear} Tout De Sweet all rights reserved. Empowered
-        by Advert Communications
+        <p className="bottom-footer-center">
+          Copyright © {currentYear} Tout De Sweet all rights reserved. Empowered
+          by
+          <a href="http://www.advertcommunications.com/" target="_blank">
+            Advert Communications
+          </a>
+        </p>
       </div>
     </div>
   );

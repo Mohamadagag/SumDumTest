@@ -137,7 +137,7 @@ const Home = () => {
                     <img src={pic1} />
                   </div>
                   <div className="single-under-map-item-desc">
-                    <h4>Delivery cakes</h4>
+                    <h4>Delivery - Cakes & Big orders</h4>
                     <p>
                       Our signature cakes can be pre-ordered upon 2 to 3 days
                       earlier notice, via either direct phone call or whatsapp
@@ -151,7 +151,7 @@ const Home = () => {
                     <img src={pic2} />
                   </div>
                   <div className="single-under-map-item-desc">
-                    <h4>Delivery small items</h4>
+                    <h4>Delivery - Desserts & Bites</h4>
                     <p>
                       Our tartes, eclairs, and other delights are available for
                       delivery via delivery aggregator “Deliveroo” or for

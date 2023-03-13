@@ -13,8 +13,8 @@ const CarouselComponent = () => {
         <Carousel.Caption>
           <h3 className="carousel-title">ENTREMET</h3>
           <p className="carousel-description">
-            A crispy golden crust, a thin cake or almond cream, a smooth custard
-            or creamy ganache.. and a lot of pleasure!
+            The finest and artisanal handcrafted cakes. Experience the different
+            layers, textures and flavors married together in each cake.
           </p>
           <Link to="/shop" className="carousel-order-btn">
             ORDER NOW
@@ -27,8 +27,8 @@ const CarouselComponent = () => {
         <Carousel.Caption>
           <h3 className="carousel-title">VIENNOISERIES</h3>
           <p className="carousel-description">
-            Madeleines and financiers… the perfect tiny treats you can take with
-            you everywhere, and enjoy at any time of the day.
+            Have special weekend mornings with our exceptional butter
+            croissants, pains au chocolat, almond croissants, and others.
           </p>
           <Link to="/shop" className="carousel-order-btn">
             ORDER NOW
@@ -42,7 +42,7 @@ const CarouselComponent = () => {
           <h3 className="carousel-title">TARTS</h3>
           <p className="carousel-description">
             A crispy golden crust with diverse and creative twists of mousses or
-            crémeux.
+            cremeux.
           </p>
           <Link to="/shop" className="carousel-order-btn">
             ORDER NOW
